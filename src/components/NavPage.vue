@@ -7,7 +7,7 @@
           <h1 class="text-[#FF9001] font-[700] text-[18px] md:text-[16px] lg:text-[18px]">mafhoom</h1>
         </router-link>
       </div>
-      <div id="side-menu" class="z-[4] w-full h-screen flex flex-col-reverse md:flex-row justify-evenly md:justify-between items-center gap-[40px] md:gap-[20px] lg:gap-[60px] pt-[60px] pb-[30px] md:py-0 md:h-auto bg-[#171717] fixed left-0 md:static text-center transition-all duration-500 overflow-y-auto md:overflow-visible md:bg-transparent" :class="{'top-0': menu == true, '-top-full': menu == false}">
+      <div id="side-menu" class="z-[4] w-full h-screen flex flex-col-reverse md:flex-row justify-evenly md:justify-between items-center gap-[40px] md:gap-[20px] lg:gap-[60px] pt-[60px] pb-[30px] md:py-0 md:h-auto bg-[#171717] fixed left-0 md:static text-center transition-all duration-500 overflow-y-auto md:overflow-visible md:bg-transparent" :class="{'top-0': menu == true, '-top-[150%]': menu == false}">
           <div id="links-pages">
             <ul class="text-[20px] md:text-[14px] 2xl:text-[17px] text-slate-300 flex flex-col md:flex-row gap-[20px] lg:gap-[40px] font-[600]">
               <li @click="menu = false" class="hover:text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#FF9001] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/">الرئيسة</router-link></li>

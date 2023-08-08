@@ -1,6 +1,6 @@
 <template>
   <div class="HomePage">
-    <header class="w-full px-[30px] md:px-[80px] pt-[190px] pb-[120px] text-white relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(0,_0,_0,_0.57)] ">
+    <header class="w-full px-[30px] md:px-[80px] pt-[190px] pb-[120px] text-white relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(0,0,0,0.73)] ">
       <img :src="require('@/image/blog-header.png')" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
       <div class="z-[2] relative text-center">
         <h1 class="text-[14vw] md:text-[80px] font-[700] mb-[20px]">اهم النصائح والمقالات </h1>
