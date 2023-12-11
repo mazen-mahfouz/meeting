@@ -11,11 +11,13 @@ import ProfilePage from '@/components/ProfilePage.vue'
 import PersonPage from '@/components/profilePages/PersonPage.vue'
 import PasswordPage from '@/components/profilePages/PasswordPage.vue'
 import WalletPage from '@/components/WalletPage.vue'
+import NotfoundPage from '@/components/NotfoundPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {path: '/', component: HomePage},
+  {path: '/not-found', component: NotfoundPage},
   {path: '/about', component: AboutPage},
   {path: '/blog', component: BlogPage},
   {path: '/subject', component: SubjectPage},

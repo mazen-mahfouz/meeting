@@ -1,11 +1,11 @@
 <template>
-  <div id="FooterPage" class="bg-[#2C17AC] p-[50px_40px] md:p-[50px_80px] flex gap-[60px] sm:gap-0 justify-around items-start flex-wrap text-white">
-    <div class="w-full sm:w-[33.333%] grid items-center justify-center justify-items-center sm:justify-items-start text-center sm:text-right gap-[5px]">
-      <img src="../image/Feb-Business_9 4.png" alt="" class="w-[110px] h-[110px]">
-      <h1 class="text-[20px]"><span class="text-[#FF9432]">مفهوم</span> دايما معاك لمستقبل افضل</h1>
+  <div id="FooterPage" class="bg-[#46439b] p-[50px_40px] md:p-[50px_80px] flex gap-[60px] sm:gap-0 justify-around items-center flex-wrap text-white">
+    <div class="w-full sm:w-[33.333%] grid items-center justify-center justify-items-center sm:justify-items-center text-center sm:text-right gap-[5px]">
+      <img src="../image/logo-footer.png" alt="" class="w-[300px]">
+      <h1 class="text-[14px]"><span class="text-[#5599f9]">كلينيكير</span> للرأي الطبي الثاني نحن نساعدك في اتخاذ القرار</h1>
     </div>
     <div class="sm:w-[33.333%] sm:mt-[50px] flex justify-center items-center flex-col gap-[15px]">
-      <h1 class="text-[20px]">قنوات التواصل</h1>
+      <h1 class="text-[20px]">روابط سريعة</h1>
       <ul class="flex justify-center items-center flex-col gap-[10px]">
         <li class="text-[14px] hover:text-sky-200 cursor-pointer transition ease-in">نبذة عنا</li>
         <li class="text-[14px] hover:text-sky-200 cursor-pointer transition ease-in">الاتصال بنا</li>

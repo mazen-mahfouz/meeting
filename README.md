@@ -1,4 +1,4 @@
-# mafhoom
+# clinicare
 
 ## Project setup
 ```
