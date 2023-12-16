@@ -1,5 +1,5 @@
 -<template>
-  <nav ref="nav" class="z-[5] w-full fixed top-0 left-0 transition-all duration-[.6s] bg-[#00000005]">
+  <div ref="navbar" class="z-[5] w-full fixed top-0 left-0 transition-all duration-[.6s] bg-[#00000005]">
     <div class="w-full flex justify-between items-center gap-[30px] md:gap-[3%] xl:gap-[12%] py-[10px] px-[20px] lg:px-[50px] xl:px-[80px]">
       <div id="logo">
         <router-link to="/" class="flex justify-center md:flex-col lg:flex-row items-center gap-[5px]">
@@ -10,11 +10,11 @@
           <div id="links-pages">
             <ul class="text-[20px] md:text-[14px] 2xl:text-[17px] flex flex-col md:flex-row gap-[20px] lg:gap-[40px] font-[600]">
               <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/" class="opacity-[.6] hover:opacity-[1]">الرئيسة</router-link></li>
-              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">من نحن</router-link></li>
-              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">الخدمات</router-link></li>
-              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">التخصصات</router-link></li>
-              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">الاطباء</router-link></li>
-              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">تواصل معنا</router-link></li>
+              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/about" class="opacity-[.6] hover:opacity-[1]">من نحن</router-link></li>
+              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/services" class="opacity-[.6] hover:opacity-[1]">الخدمات</router-link></li>
+              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/specialties" class="opacity-[.6] hover:opacity-[1]">التخصصات</router-link></li>
+              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/doctors" class="opacity-[.6] hover:opacity-[1]">الاطباء</router-link></li>
+              <li @click="menu = false" class="text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/contact-us" class="opacity-[.6] hover:opacity-[1]">تواصل معنا</router-link></li>
               <li @click="menu = false" class="md:hidden text-white relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#755eff] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">ملف شخصي</router-link></li>
               <li @click="menu = false" class="md:hidden hover:text-red-900 text-red-700 relative after:absolute after:bottom-[-10px] after:w-[0%] after:h-[1px] after:left-[50%] after:translate-x-[-50%] after:bg-[#810d09] hover:after:w-full after:transition-all duration-[.6s]"><router-link to="/not-found" class="opacity-[.6] hover:opacity-[1]">تسجيل خروج</router-link></li>
             </ul>
@@ -55,7 +55,7 @@
           </div>
         </div>
     </div>  
-  </nav>
+  </div>
 </template>
 
 <script>
@@ -66,16 +66,38 @@ export default {
       menu: false,
     }
   },
+  watch:{
+      $route (){
+        let self = this;
+        if(this.$router.history.current.path == '/login' || this.$router.history.current.path == '/register'){
+          self.$refs.navbar.classList.add('!bg-[#000000d1]')
+        }else{
+          self.$refs.navbar.classList.remove('!bg-[#000000d1]')
+          window.addEventListener("scroll", () =>{
+              if(window.scrollY > 80){
+                self.$refs.navbar.classList.add('!bg-[#000000d1]')
+              }else{
+                self.$refs.navbar.classList.remove('!bg-[#000000d1]')
+              }
+          });
+        }
+      }
+  },
   mounted(){
     let self = this;
-    window.addEventListener("scroll", () =>{
-        if(window.scrollY > 80){
-          self.$refs.nav.classList.add('!bg-[#000000d1]')
-        }else{
-          self.$refs.nav.classList.remove('!bg-[#000000d1]')
-        }
-    });
-  }
+    if(this.$router.history.current.path == '/login' || this.$router.history.current.path == '/register'){
+      self.$refs.navbar.classList.add('!bg-[#000000d1]')
+    }else{
+      self.$refs.navbar.classList.remove('!bg-[#000000d1]')
+      window.addEventListener("scroll", () =>{
+          if(window.scrollY > 80){
+            self.$refs.navbar.classList.add('!bg-[#000000d1]')
+          }else{
+            self.$refs.navbar.classList.remove('!bg-[#000000d1]')
+          }
+      });
+    }
+  },
 }
 </script>
 
