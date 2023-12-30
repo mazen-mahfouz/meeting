@@ -1,25 +1,35 @@
 <template>
   <div id="app">
-    <NavPage />
-    <router-view></router-view>
-    <FooterPage />
+    <router-view/>
   </div>
 </template>
 
-<script>
 
-import NavPage from './components/NavPage.vue';
-import FooterPage from './components/FooterPage.vue';
+<script>
+import { CometChat } from "@cometchat-pro/chat";
+
+import "./App.css";
 
 export default {
-  name: 'App',
-  components: {
-    NavPage,
-    FooterPage,
+  data() {
+    return {};
+  },
+  created() {
+    this.initializeApp();
+  },
+  methods: {
+    initializeApp() {
+      var appID = '2504235a9b442ca2';
+
+      CometChat.init(appID).then(
+        () => {
+          console.log("Initialization completed successfully");
+        },
+        error => {
+          console.log("Initialization failed with error:", error);
+        }
+      );
+    }
   }
-}
+};
 </script>
-
-<style lang="scss">
-
-</style>
